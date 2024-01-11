@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <title>{{ item.item_name }}</title>
+    </head>
+    <body>
+        <li>{{ item.item_code }}</li>
+        <li>{{ item.item_name }}</li>
+        <li>{{ item.item_measurement }}</li>
+        <li>{{ item.item_quantity }}</li>
+        <li><img src="{{ item.item_image }}" alt="Gallery" /></li>
+        <li>{{ item.supplier_name }}</li>
+        <li>{{ item.employee_name }}</li>
+        <li>{{ item.created_at }}</li>
+        
+        <a href="{% url 'Item_list_view'%}">Item List</a>
+        <script src="" async defer></script>
+    </body>
+</html>
